@@ -1,3 +1,4 @@
+Real-world inspired monitoring solution based on production DevOps experience.
 # Azure Monitoring & Observability Project
 
 This project demonstrates monitoring, alerting, and observability using Azure Monitor, Log Analytics, and KQL queries.
