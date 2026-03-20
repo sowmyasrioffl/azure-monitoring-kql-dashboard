@@ -26,3 +26,8 @@ Monitor system performance, detect failures, and trigger alerts for proactive in
 Perf
 | where CounterName == "% Processor Time"
 | summarize avg(CounterValue) by bin(TimeGenerated, 5m)
+
+## Future Improvements
+- Integrate real Azure resources
+- Add automated alert triggers
+- Implement dashboard visualization using Azure Portal
