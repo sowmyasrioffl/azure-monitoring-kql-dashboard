@@ -1,0 +1,14 @@
+```text
+CPU Monitoring:
+Perf
+| where CounterName == "% Processor Time"
+| summarize avg(CounterValue) by bin(TimeGenerated, 5m)
+
+Error Logs:
+AzureDiagnostics
+| where Level == "Error"
+| summarize count() by bin(TimeGenerated, 5m)
+
+Heartbeat:
+Heartbeat
+| summarize count() by Computer
